@@ -190,6 +190,19 @@ docker compose down
 
 Sur ce poste, l'infrastructure Docker tourne dans Ubuntu WSL, sans Docker Desktop.
 
+Le plus simple :
+
+```powershell
+cd C:\Users\Utilisateur\Documents\application_temps_reel\Exchange-Proxy
+.\start.ps1
+```
+
+Pour tout arreter proprement :
+
+```powershell
+.\stop.ps1
+```
+
 Depuis PowerShell :
 
 ```powershell
