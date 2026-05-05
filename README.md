@@ -194,8 +194,11 @@ Depuis PowerShell :
 
 ```powershell
 cd C:\Users\Utilisateur\Documents\application_temps_reel\Exchange-Proxy
+Start-Process -FilePath C:\Windows\System32\wsl.exe -ArgumentList @("-d","Ubuntu","-u","root","--exec","sleep","infinity") -WindowStyle Hidden
 wsl -d Ubuntu -u root -- bash -lc "cd /mnt/c/Users/Utilisateur/Documents/application_temps_reel/Exchange-Proxy && docker compose up -d"
 ```
+
+La commande `sleep infinity` garde WSL actif pendant que les conteneurs tournent.
 
 Verifier les conteneurs :
 
