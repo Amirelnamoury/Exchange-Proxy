@@ -194,14 +194,16 @@ Le plus simple :
 
 ```powershell
 cd C:\Users\Utilisateur\Documents\application_temps_reel\Exchange-Proxy
-.\start.ps1
+.\start.cmd
 ```
 
 Pour tout arreter proprement :
 
 ```powershell
-.\stop.ps1
+.\stop.cmd
 ```
+
+Les fichiers `.cmd` contournent uniquement pour cette commande le blocage PowerShell "execution de scripts desactivee".
 
 Depuis PowerShell :
 
