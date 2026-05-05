@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.vscode/*.pyc
+.vscode/
+.env
+target/
+.idea/
+*.class
+*.log
+logs/
+.maven-home/
+.m2repo/
