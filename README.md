@@ -1,21 +1,3 @@
-# Exchange Proxy - Application temps reel
-
-## Important : migration Spring Boot
-
-Le projet a ete migre de **Python** vers **Java Spring Boot**.
-
-Il ne faut donc plus lancer :
-
-```bash
-python producer/main.py
-python consumer/main.py
-pip install -r requirements.txt
-mvn -pl producer exec:java
-mvn -pl consumer exec:java
-```
-
-Le producer et le consumer sont maintenant reunis dans **une seule application Spring Boot**.
-
 ## Objectif du projet
 
 Exchange Proxy centralise les appels a l'API de taux de change pour eviter que plusieurs equipes interrogent directement le fournisseur.
